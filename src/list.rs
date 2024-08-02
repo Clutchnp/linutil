@@ -71,10 +71,15 @@ impl CustomList {
                     command: Command::LocalFile("system-setup/2-gaming-setup.sh"),
                 },
                 ListNode {
-                    name: "Global Theme",
-                    command: Command::LocalFile("system-setup/3-global-theme.sh"),
+                name: "Global Theme",
+                command: Command::None,
+                } => {
+                ListNode {
+                    name: "Catppuccin",
+                    command: Command::LocalFile("system-setup/global-themes/catppuccin.sh"),
                 },
-            },
+            },            
+                },
             ListNode {
                 name: "Security",
                 command: Command::None
